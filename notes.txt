@@ -1,0 +1,227 @@
+-Everything in Python is object
+-Every object contains set of methods
+
+
+objects
+--------
+
+number
+-------
+number can be integer or decimal or octal or hexa
+
+aval = 10
+bval = 4.5
+
+string
+-------
+string is defined in single or double or triple quotes
+
+aname = 'python'
+bname = "python programming"
+cname = """unix shell scripting"""
+
+
+list ( array in C )
+----
+list contains set of elements.
+Elements can be set of numbers or strings or any combination.
+list elements are defined in [].
+
+alist = [10,20,30]
+blist = ["python","kafka","ruby"]
+clist = [10,20,5.65,"java"]
+
+
+tuple ( READONLY, IMMUTABLE , UNCHANGABLE)
+-----------------------
+tuple contains set of elements.
+Elements can be set of numbers or strings or any combination.
+tuple  elements are defined in ().
+****** Elements inside tuple cannot be modified ******
+
+
+atup = (45,67,34)
+btup = ("java","oracle","mysql")
+ctup = (56,7.89,"python")
+
+
+
+dictionary/hash/map
+-------------
+dictionary contains elements in key-value pairs
+dictionary elements are defined in {}.
+** In dictionary, keys are ALWAYS UNIQUE
+** In dictionary , key can be number or string
+                  value can be number,string,list,tuple,dictionary
+
+
+syntax :   object = { key:value , key:value , key:value }
+example:     book = {"chap1":10 ,"chap2":20 ,"chap3":30 }
+           numbers = {1:2,4:5,6:7}
+             info = {"chap1":['John',50,"UK"] ,"chap2":['Rita',60,"US"] }
+
+
+
+set
+-----
+set is UNORDERED COLLECTION Of UNIQUE elements of SAME TYPE.
+set elements are defined in {}.
+** Indexing is NOT allowed in set operations ****
+
+
+aset =  {10,10,10,20,30}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Object classification
+------------------------
+
+
+mutable
+----------
+list
+dictionary
+set
+
+
+immutable
+------------
+number
+string
+tuple
+
+
+methods & functions
+---------------------
+
+methods: methods are object specific.
+         Every object has its own different methods
+         All the methods are accessed with . operator
+
+function: functions are common for all the objects.
+
+
+functions are of two types
+
+- builtin functions
+- user defined functions
+
+to display all builtin functions :
+
+In the console :     dir(__builtins__)
+
+builtin functions  
+-----------------
+print() :
+len()   : length of the object
+dir()   : will display the dir of all the methods
+help()  : just like man
+range() :
+input()
+max()
+min()
+sum()
+isinstance()
+id()
+zip()
+
+
+conversion functions
+----------------------
+int()
+float()
+oct()
+str()
+list()
+tuple()
+dict()
+set()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
