@@ -31,6 +31,8 @@ alist = [10,20,30]
 blist = ["python","kafka","ruby"]
 clist = [10,20,5.65,"java"]
 
+obje = [[1,2],[3,4],[5,6],[7,8],{1:2},(4,5)]    # list of lists
+
 
 tuple ( READONLY, IMMUTABLE , UNCHANGABLE)
 -----------------------
@@ -48,7 +50,7 @@ ctup = (56,7.89,"python")
 
 dictionary/hash/map
 -------------
-dictionary contains elements in key-value pairs
+dictionary contains elements in key-value pairs.
 dictionary elements are defined in {}.
 ** In dictionary, keys are ALWAYS UNIQUE
 ** In dictionary , key can be number or string
@@ -153,6 +155,318 @@ list()
 tuple()
 dict()
 set()
+
+
+
+operators
+----------
+
+
+arithmetic operators :  + - * %  /
+
+logical operators  :   and or not
+                      if a >5 and a <100 :
+                      if name.isupper()  or name.count(4) 
+
+relational operators: < <= > >= == !=
+
+assignment operator ( ++ and -- are allowed in python)
+
+val = 10
+val = val + 1  (or)  val+=1
+val = val - 1  (or)  val-=1
+
+
+special operators:
+-----------------
+in
+as
+
+
+
+file handling
+--------------
+
+working with flat files  ( .csv .log .conf .prop )
+working with third party files ( docx ppt pdf zip ....)
+
+
+working with flat files 
+------------------
+r : read
+w : write
+a : append
+
+opening the file
+-----------------
+
+syntax:    object = open(filename,mode)
+
+example:    fobj  = open("abc.txt","r")   # read mode
+
+            fobj  = open("abc.txt","w")   # write mode
+            case1: If the file is not existing, file will be created first
+            case2: If the file already exists,  it overwrite the file content first
+
+            fobj  = open("abc.txt","a")   # append mode
+            case1: If the file is not existing, file will be created first
+            case2: if the file is existing, it appends the data to the first
+
+
+
+closing the file
+-----------------
+fobj.close()
+
+
+
+file read operation
+-------------------
+
+- reading line by line ( for processing ) 
+- using fobj.readlines() -----------------> will read the complete file in list format
+- using fobj.read()    -------------------->  will read the complete file in string ( not suggested in general )
+- using csv library   ( for processing ) 
+- using pandas library  ( for processing ) 
+
+
+exception handling
+--------------------
+Basically there are 2 types of errors
+
+1. syntax error
+2. runtime error or semantic error or logical error
+
+
+Handling the errors in runtime is known as exception handling
+
+
+try
+except
+else    ( optional)
+finally ( optional)
+
+
+
+
+
+
+libraries
+---------
+
+- builtin libraries ( which are generally used by everyone like os related, mathematical libraries , file related )
+--------------------
+Built libraries are installed with python itself.
+
+
+- third party libraries 
+-----------------------
+Depending on the requirement(cloud, ML , excel , msoffice, networking, image processing )  developer has to install the third party library using pip tool or installing manually.
+
+How to import library?
+----------------------
+
+import math
+print(math.tan(2))
+print(math.floor(2.3))
+
+
+importing library with alias name
+---------------------------------
+import math as m
+print(m.tan(2))
+print(m.floor(2.3))
+
+
+importing required methods ONLY   
+--------------------------------
+from math import sin,cos,tan
+print(sin(2))
+print(cos(1))
+
+
+
+
+8000+  builtin libraries
+250000+ third party library
+
+builtin libraries
+-----------------------
+
+sys           : system config information
+urllib.request: working with http
+math          : mathematical operations
+random        : random numbers
+calendar
+smtplib       : sending mails
+ftplib        : ftp'ng the file
+telnetlib     :
+logging       : logging all the events
+shutil        : copy,move,rmtree ....
+filecmp       : comparing directories
+zipfile       : create/extract the zip files
+rarfile       : create/extract the tar files
+tarfile       : create/extract the tarfiles
+getpass       : shadowing the password
+json          : reading/writing json files
+csv           : reading/writing csv files
+xml        
+sysconfig     : system configuration
+collections   : working with dictionaries
+argparse      : passing args from command line
+optparse      : passing args from command line
+time          : working with date and time
+datetime      : working with date and time
+cryptography  : encrypting and decrypting the passwords
+heapq         : performing array operations
+gzip          : reading gunzip files
+re            : validating the strings
+ipadresss     : validting ip address
+platform      : display platform information
+pathlib       : creating temp files
+threading     : for performing multi threading
+multiprocessing:
+subprocess    : invoking the system commands ( linux or dos commands)
+
+
+
+frequently used third party libraries
+---------------------------------------
+database related
+----------------
+pymysql   :
+cx_Oracle
+pymongo
+pymssql
+pyautogui
+
+web frameworks ( developing web applications)
+--------------
+django
+flask
+bottom
+
+analytics/machine learning
+---------------------------
+numpy
+scipy
+pandas
+seaborn
+plotly
+ggplot
+matplotlib   : visualizing data .. bar graph.. pie graph
+scikit-learn :  machine learning algorithms
+
+image processing
+---------------
+pillow
+opencv
+
+APIs ( REST API)
+-----
+requests
+
+excel programming
+------------------
+openpyxl    : reading/write excel files
+xlsxwriter  : writing to excel file
+python-docx : working with ms-word
+
+networking
+-----------
+paramiko   :  interacting with remote servers
+netmiko    :  connecting to router/switch
+pyping     :  ping any host or ip address
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
