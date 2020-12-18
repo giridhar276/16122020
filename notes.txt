@@ -58,7 +58,7 @@ dictionary elements are defined in {}.
 
 
 syntax :   object = { key:value , key:value , key:value }
-example:     book = {"chap1":10 ,"chap2":20 ,"chap3":30 }
+example:     book = {"chap1":10 ,"chap2":20 ,"chap3":30 ,"chap1":1000 }
            numbers = {1:2,4:5,6:7}
              info = {"chap1":['John',50,"UK"] ,"chap2":['Rita',60,"US"] }
 
@@ -165,7 +165,7 @@ operators
 arithmetic operators :  + - * %  /
 
 logical operators  :   and or not
-                      if a >5 and a <100 :
+                      if a >5 and  a <100 :
                       if name.isupper()  or name.count(4) 
 
 relational operators: < <= > >= == !=
@@ -179,7 +179,7 @@ val = val - 1  (or)  val-=1
 
 special operators:
 -----------------
-in
+in      if 'python' in 'python programming':
 as
 
 
@@ -248,6 +248,39 @@ finally ( optional)
 
 
 
+Installing 3rd party library
+-----------------------------
+- using pip tool ( pip is an automated tool that is installed with python by default )
+  step1:  pip install pymysql
+
+- using easy_install tool
+  step1: easy_install pymysql
+
+- installing manually
+  step1: download the required library
+  step2: open prompt/terminal
+  step3: navigate to the path where the .tar.gz is extracted
+  step4: python setup.py install
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -259,7 +292,7 @@ libraries
 Built libraries are installed with python itself.
 
 
-- third party libraries 
+- third party libraries   ( www.pypi.org)    2750000+
 -----------------------
 Depending on the requirement(cloud, ML , excel , msoffice, networking, image processing )  developer has to install the third party library using pip tool or installing manually.
 
@@ -293,6 +326,7 @@ print(cos(1))
 builtin libraries
 -----------------------
 
+os            : os.listdir() os.remove() 
 sys           : system config information
 urllib.request: working with http
 math          : mathematical operations
@@ -362,7 +396,7 @@ image processing
 pillow
 opencv
 
-APIs ( REST API)
+APIs ( REST API) ( web services ) 
 -----
 requests
 
@@ -380,7 +414,10 @@ pyping     :  ping any host or ip address
 
 
 
-
+web scrapping
+--------------
+beautifulsoup
+scrapy
 
 
 
